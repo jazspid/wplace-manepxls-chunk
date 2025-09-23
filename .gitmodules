@@ -1,0 +1,3 @@
+[submodule "tlapse"]
+	path = tlapse
+	url = https://github.com/rickarockFR/WplaceTimelapse
