@@ -47,7 +47,7 @@ for entry in imageList:
     totalFileSize+=getImage(entry[1])
     splitImage("images/"+fn)
     counter+=1
-    print("processed {n} files, {mb} megabytes in total.".format(n=counter,nbytes=totalFileSize/1048576))
+    print("processed {n} files, {mb} megabytes in total.".format(n=counter,mb=totalFileSize/1048576))
     if totalFileSize > 1073741824:
         print("1GB size reached, exiting...")
         break
