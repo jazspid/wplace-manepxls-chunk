@@ -48,6 +48,6 @@ for entry in imageList:
     splitImage("images/"+fn)
     counter+=1
     print("processed {n} files, {mb} megabytes in total.".format(n=counter,mb=totalFileSize/1048576))
-    if totalFileSize > 67108864:
-        print("64MB size reached, exiting...")
+    if totalFileSize > 201326592:
+        print("192MB size reached, exiting...")
         break
