@@ -16,4 +16,13 @@ jobs:
         python-version: '3.x'
     - name: Install Requirements
       run: pip install pillow requests
-      
+    - name: Crawl and Split
+      run: python chunk-split.py
+    - name: Clean and Git actions
+      run:
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add images/
+        git rm images/*.png
+        git commit -m "crawl and split [skip ci]" || echo "No changes"
+        git push
