@@ -1,8 +1,7 @@
 name: Run Chunk Splitter
 
-on:
-  schedule:
-    - cron: "0,6,12,18,24,30,36,42,48,54 * * * *"
+on: 
+  workflow_dispatch
 jobs:
   main:
     runs-on: ubuntu-latest
