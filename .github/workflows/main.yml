@@ -3,7 +3,7 @@ name: Run Chunk Splitter
 on: 
   workflow_dispatch:
   schedule:
-  - cron: 0,20,40 * * * *
+  - cron: 30 * * * *
 jobs:
   main:
     runs-on: ubuntu-latest
